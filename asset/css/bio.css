@@ -1,0 +1,190 @@
+/* font-family: 'Fredoka One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'MedievalSharp', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Shadows Into Light', cursive; */
+
+body {
+    background-image: url('../img/44.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Pacifico', cursive;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bio {
+    background-image: url('../img/51.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 700px;
+    background-color: black;
+}
+
+.header {
+    background-color: rgb(83, 3, 19);
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+
+.header p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.oldpic {
+    margin-top: 30px;
+    margin-left: 18%;
+    background-image: url('../img/41.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 70px;
+    filter: grayscale(90%);
+    transition: .2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.oldpic:hover {
+    border-radius: 40px;
+    transform: scale(1.02);
+    filter: grayscale(0%);
+    border: 1px solid rgb(14, 14, 14);
+    padding: 5px;
+}
+
+.arrow {
+    display: none;
+    margin-top: -90px;
+    margin-left: 30%;
+    background-image: url('../img/hand.png');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+.intro {
+    display: none;
+    width: 600px;
+    padding: 30px;
+    /* background-image: url('../img/46.png'); */
+    /* background-position: center;
+    background-size: cover; */
+    margin-left: 40%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    background-color: rgb(255, 250, 209);
+    font-family: 'Courgette', cursive;
+    filter: opacity(0.8);
+}
+
+.highschool {
+    margin-top: 30px;
+    margin-left: 82%;
+    background-image: url('../img/45.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 70px;
+    filter: grayscale(50%);
+    transition: .2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.highschool:hover {
+    background-image: url('../img/45c.jpg');
+    border-radius: 40px;
+    transform: scale(1.02);
+    filter: grayscale(0%);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.arrow1 {
+    display: none;
+    margin-top: -90px;
+    margin-left: 70%;
+    background-image: url('../img/hand1.png');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+.high {
+    display: none;
+    width: 600px;
+    padding: 30px;
+    /* background-image: url('../img/46.jpg');
+    background-position: center;
+    background-size: cover; */
+    margin-left: 20%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-family: 'Courgette', cursive;
+    filter: opacity(0.8);
+    background-color: rgb(92, 3, 3);
+}
+
+.university {
+    margin-top: 30px;
+    margin-left: 18%;
+    background-image: url('../img/48.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 70px;
+    transition: .2s ease-in-out;
+    color: rgb(3, 3, 3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.university:hover {
+    background-image: url('../img/47.jpg');
+    border-radius: 40px;
+    transform: scale(1.02);
+    filter: grayscale(0%);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.uni {
+    display: none;
+    width: 600px;
+    padding: 30px;
+    /* background-image: url('../img/50.jpg');
+    background-position: center;
+    background-size: cover; */
+    background-color: rgb(255, 250, 209);
+    margin-left: 40%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    font-family: 'Courgette', cursive;
+    filter: opacity(0.8);
+}
+
+.arrow2 {
+    display: none;
+    margin-top: -90px;
+    margin-left: 30%;
+    background-image: url('../img/hand.png');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p id="error"></p>
+    <input name="user" id="user" type="text" placeholder="username">
+    <input name="pass" id="pass" type="password" placeholder="Password">
+    <button id="sub">SUBMIT</button>
+    <div class="ch"></div>
+    <script>
+        document.querySelector("#sub").addEventListener('click', function() {
+            // var form = document.valForm;
+            // var form_user = document.forms["valForm"]["user"].value;
+
+            var username = document.querySelector("#user").value;
+            var passw = document.querySelector("#pass").value;
+
+            if (username == "" || passw == "") {
+                document.querySelector("#error").textContent = "error";
+
+            } else {
+                document.querySelector("#error").textContent = "succesful";
+            }
+        });
+    </script>
+</body>
+
+</html>

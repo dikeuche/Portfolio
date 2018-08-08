@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Login page</title>
+    <link href="asset/css/loginstyle.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<style>
+    #msg {
+        display: none;
+        font-size: .5rem !important;
+        position: absolute;
+        margin-top: 0%;
+    }
+</style>
+
+<body>
+    <div class="banner">
+        <div class="logo"></div>
+        <h1 class="header">My ScrapBook</h1>
+    </div><br>
+    <hr>
+    <form>
+        <div class="input">
+            <input id="mail" type="email" placeholder="Email Address" required><br><br>
+            <input id="pass" type="password" placeholder="Password" required>
+            <p>Forgot your password?</p>
+        </div>
+        <p id="emsg"></p>
+        <button id="signin">Sign In</button>
+
+        <br><br>
+        <hr><br>
+        <div class="foot">
+            <button id="createacc">Create Account</button>
+    </form>
+    <button id="learn">Learn More</button>
+    </div><br>
+    <hr>
+    <p>All-Rights Reserved.&copy; 2018</p>
+</body>
+<script src="asset/js/loginScript.js"></script>
+
+</html>

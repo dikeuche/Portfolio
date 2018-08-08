@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Courgette|Fjalla+One|Indie+Flower|Kaushan+Script|Modern+Antiqua|Montserrat|Sacramento|Tangerine" rel="stylesheet">
+    <link href="asset/css/bio.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="asset/img/d.png" />
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bio</title>
+</head>
+
+<body>
+    <div class="bio"></div>
+
+    <div class="header">
+        <h1 class="display-4"><i>of  </i> Diké Uche</h1>
+        <p class="lead">This is my biography. <i>Click through the timelines to start the journey</i></p>
+
+    </div>
+
+    <!-- Birth -->
+    <div class="oldpic">1989</div>
+    <div class="arrow"></div>
+    <div class="intro">
+        <h4>This is how it all begun. . .</h4>
+        <h6>1989 was the year, June was the month and the 16th was the day. The new Batman movie was out with Jack Nicholson as the Joker and "I'll be loving you forever" by New Kids on the Block was topping the billboard charts. Not too sure whether the
+            Knight brothers knew anything about the 'new kid on the block' but Mr and Mrs Uche sure did! Growing up was filled with happy memories
+        </h6>
+    </div>
+
+    <!-- Highschool -->
+    <div class="highschool">2001</div>
+    </div>
+    <div class="arrow1"></div>
+    <div class="high">
+        <b></b>
+        <h4>High School days</h4>
+        </b>
+        <h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+            here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+            Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </h6>
+    </div>
+
+    <!-- University -->
+    <div class="university">2008</div>
+    <div class="arrow2"></div>
+    <div class="uni">
+        <h4>On to Uni</h4>
+        <h6>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+            default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </h6>
+    </div>
+
+    <!-- Coding found me -->
+    <div class="postuni">2008</div>
+    <div class="arrow3"></div>
+    <div class="post">
+        <h4>Code found me</h4>
+        <h6>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+            default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </h6>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // $(".oldpic").click(function() {
+            //     $(".arrow").toggle(500);
+            //     $(".intro").slideToggle(1000);
+            // });
+            // $(".highschool").click(function() {
+            //     $(".arrow1").toggle(500);
+            //     $(".high").slideToggle(1000);
+            // });
+            // $(".university").click(function() {
+            //     $(".arrow2").toggle(500);
+            //     $(".uni").slideToggle(1000);
+            // });
+
+
+            function scrollToAnchor(anchor) {
+                var aTag = $(anchor);
+
+                $('html,body').animate({
+                    scrollTop: aTag.offset().top
+                }, 'slow');
+            }
+            $('.oldpic').click(function(e) {
+                $('.arrow').toggle(500);
+                $(".intro").slideToggle(1000);
+
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+
+
+                    scrollToAnchor('.highschool');
+                    return false;
+
+                } else {
+
+
+                    $('body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                    return false;
+                }
+            });
+
+            $('.highschool').click(function(e) {
+                $('.arrow1').toggle(500);
+                $(".high").slideToggle(1000);
+
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+
+
+                    scrollToAnchor('.university');
+                    return false;
+
+                } else {
+
+
+                    $('body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                    return false;
+                }
+            });
+            $('.university').click(function(e) {
+                $('.arrow2').toggle(500);
+                $(".uni").slideToggle(1000);
+
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+
+
+                    scrollToAnchor('.uni');
+                    return false;
+
+                } else {
+
+
+                    $('body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                    return false;
+                }
+            });
+        });
+    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
